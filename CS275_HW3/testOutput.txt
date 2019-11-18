@@ -1,0 +1,34 @@
+
+p1 = new Polynomial(): p1 = 0
+        p1.add_to_coef(1, 100), p1 =  + 1.0x^100
+        p1.assign_coef(-1, 5),  p1 =  + x^100-1.0x^5
+        p1.add_to_coef(-1, 0),  p1 =  + x^100 - 1.0x^5-1.0
+        p1.coefficient(110) = 0.0
+        p1.coefficient(80) = 0.0
+        p1.coefficient(5) = -1.0
+        p1.coefficient(3) = 0.0
+        p1.assign_coef(0, 0),  p1 =  + x^100-1.0x^5
+        p1.assign_coef(0, 100),  p1 = -1.0x^5
+        p1.add_to_coef(1, 0),  p1 =  - 1.0x^5 + 1.0
+        p1.assign_coef(0, 0),  p1 = -1.0x^5
+        p1(2) = -32.0
+
+p3 = new Polynomial (p1),  p3 = -1.0x^5
+        p3 == p1 false
+        p3.assign_coef(1, 5),  p3 =  + 1.0x^5   
+        p3.assign_coef(2,2),  p3 =  + x^5 + 2.0x^2
+        p3(2) = 40.0
+
+        p1.assign_coef(-2,2),  p1 =  - 1.0x^5-2.0x^2
+        p3 + p1= 0
+
+p2 = new Polynomial(1): p2 =  + 1.0
+      p2.assign_coef(1,5), p2 =  + x^5 + 1.0
+
+      p2 * (-1) =  - 1.0x^5-1.0
+      p2 * p1 =  - 1.0x^10 - 2.0x^7 - 1.0x^5-2.0x^2
+      p1.assign_coef(0,2),  p1 = -1.0x^5
+      p1.assign_coef(-1,0),  p1 =  - 1.0x^5-1.0
+      p1.assign_coef(1,5),  p1 =  + x^5-1.0
+      p2 * p1 =  + x^10-1.0
+
